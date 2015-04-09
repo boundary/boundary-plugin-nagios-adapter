@@ -1,0 +1,17 @@
+{
+	"items" :
+	[
+		{
+			"source" : "",
+			"name" : "CHECK_USERS",
+			"cmd" : "/usr/lib/nagios/plugins/check_users",
+			"args" : "0 0"
+		},
+		{
+			"source" : "",
+			"name" : "CHECK_LOAD",
+			"cmd" : "/usr/lib/nagios/plugins/check_load",
+			"args" : "0 0"
+		}
+	]
+}

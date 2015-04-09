@@ -1,0 +1,22 @@
+{
+    "description": "Collects metrics value from Nagios perfomance data",
+    "icon": "icon.png",
+    "command": "boundary-meter index.lua",
+    "postExtract": "",
+    "command_lua": "boundary-meter index.lua",
+    "postExtract_lua": "",
+    "metrics": [
+        ""
+    ],
+    "paramArray": { "itemTitle": [ "name" ], "schemaTitle": "Instance Name" },
+    "paramSchema": [
+        {
+            "title": "Poll Time (ms)",
+            "name": "pollInterval",
+            "description": "The Poll Interval to call the command. Defaults 5 seconds",
+            "type": "integer",
+            "default": 5000,
+            "required": true
+        }
+    ]
+}
