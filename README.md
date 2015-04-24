@@ -1,4 +1,4 @@
-Boundary WMI Plugin
+Boundary Nagios Plugin
 --------------------------
 Collects metrics value from Nagios perfomance data.
 
