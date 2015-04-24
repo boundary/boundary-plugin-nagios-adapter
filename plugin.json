@@ -1,5 +1,5 @@
 {
-    "description": "Collects metrics value from Nagios perfomance data",
+    "description": "Collects metric values from Nagios plugins",
     "icon": "icon.png",
     "command": "boundary-meter index.lua",
     "postExtract": "",
