@@ -7,19 +7,51 @@
   "postExtract_lua": "",
   "metrics": [
     "NAGIOS_CHECK_USERS",
-    "NAGIOS_CHECK_LOAD"
+    "NAGIOS_CHECK_LOAD1",
+    "NAGIOS_CHECK_LOAD5",
+    "NAGIOS_CHECK_LOAD15"
   ],
   "paramArray": {
-    "itemTitle": [
-      "name"
-    ],
-    "schemaTitle": "Instance Name"
+    "itemTitle": [ "name" ],
+    "schemaTitle": "Check Name"
   },
   "paramSchema": [
     {
+      "title": "Check Name",
+      "name": "name",
+      "description": "Name of this Nagios plugin check",
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    {
+      "title": "Check Command",
+      "name": "cmd",
+      "description": "Path to the Nagios plugin check executable or script",
+      "type": "string",
+      "default": "",
+      "required": true
+    },
+    {
+      "title": "Check Command Arguments",
+      "name": "args",
+      "description": "Arguments to pass to the Nagios plugin check executable or script",
+      "type": "string",
+      "default": "",
+      "required": false
+    },
+    {
+      "title": "Source",
+      "name": "source",
+      "description": "Source to use for the collected measurement",
+      "type": "string",
+      "default": "",
+      "required": false
+    },
+    {
       "title": "Poll Time (ms)",
-      "name": "pollInterval",
-      "description": "The Poll Interval to call the command. Defaults 5 seconds",
+      "name": "interval",
+      "description": "How often to call the Nagios plugin check executable or script. Defaults 5 seconds",
       "type": "integer",
       "default": 5000,
       "required": true

@@ -3,14 +3,18 @@
     {
       "source": "",
       "name": "NAGIOS_CHECK_USERS",
-      "cmd": "/usr/lib/nagios/plugins/check_users",
-      "args": "0 0"
+      "cmd": "/usr/local/nagios/libexec/check_users",
+      "args": "0 0",
+      "source": "check_users",
+      "interval": "5000"
     },
     {
       "source": "",
       "name": "NAGIOS_CHECK_LOAD",
-      "cmd": "/usr/lib/nagios/plugins/check_load",
-      "args": "0 0"
+      "cmd": "/usr/local/nagios/libexec/check_load",
+      "args": "0 0",
+      "source": "check_load",
+      "interval": "5000"
     }
   ]
 }

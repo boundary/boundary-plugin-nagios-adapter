@@ -13,11 +13,31 @@
         {
             "defaultAggregate": "avg",
             "defaultResolutionMS": 20000,
-            "description": "Measures the process load via check_load Nagios plugin",
-            "displayName": "Nagios - Load",
-            "displayNameShort": "Nagios - Load",
+            "description": "Measures the system 1 minute load via check_load Nagios plugin",
+            "displayName": "Nagios - Load 1 Minute",
+            "displayNameShort": "Nagios - Load 1m",
             "isDisabled": 0,
-            "name": "NAGIOS_CHECK_LOAD",
+            "name": "NAGIOS_CHECK_LOAD1",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the system 5 minute load via check_load Nagios plugin",
+            "displayName": "Nagios - Load 5 Minutes",
+            "displayNameShort": "Nagios - Load 5m",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_LOAD5",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the system 15 minute load via check_load Nagios plugin",
+            "displayName": "Nagios - Load 15 Minutes",
+            "displayNameShort": "Nagios - Load 15m",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_LOAD15",
             "unit": "number"
         }
     ]
