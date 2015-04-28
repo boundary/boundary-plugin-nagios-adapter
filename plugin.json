@@ -7,7 +7,7 @@
   "postExtract_lua": "",
   "metrics": [
     "NAGIOS_CHECK_USERS",
-    "NAGIOS_LOAD_USERS"
+    "NAGIOS_CHECK_LOAD"
   ],
   "paramArray": {
     "itemTitle": [
