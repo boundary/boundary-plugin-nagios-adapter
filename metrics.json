@@ -1,0 +1,24 @@
+{
+    "result": [
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the number of users on the system via check_users Nagios plugin",
+            "displayName": "Nagios - Users",
+            "displayNameShort": "Nagios - Users",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_USERS",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the process load via check_load Nagios plugin",
+            "displayName": "Nagios - Load",
+            "displayNameShort": "Nagios - Load",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_LOAD",
+            "unit": "number"
+        }
+    ]
+}
