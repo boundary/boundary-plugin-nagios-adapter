@@ -11,6 +11,16 @@
     "NAGIOS_CHECK_LOAD5",
     "NAGIOS_CHECK_LOAD15"
   ],
+  "dashboards": [
+    {
+      "name": "Nagios - Load",
+      "layout": "d-w=1&d-h=3&d-pad=5&d-bg=none&d-g-NAGIOS_CHECK_LOAD15=0-0-1-1&d-g-NAGIOS_CHECK_LOAD5=0-1-1-1&d-g-NAGIOS_CHECK_LOAD1=0-2-1-1"
+    },
+    {
+      "name": "Nagios - Users",
+      "layout": "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-NAGIOS_CHECK_USERS=0-0-1-1"
+    }
+  ],
   "paramArray": {
     "itemTitle": [ "name" ],
     "schemaTitle": "Check Name"
