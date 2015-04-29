@@ -108,7 +108,7 @@ if (#_parameters.items >0 ) then
   for _,item in ipairs(_parameters.items) do 
     item.source = item.source or _parameters.source --default hostname
     item.args = tools.split (item.args or "", " ")
-    timer.setInterval(item.interval,poll,item)
+    local timer = timer.setInterval(item.interval,poll,item)
   end
 else
   utils.debug("Configuration error: no items found")
