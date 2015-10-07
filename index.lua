@@ -1,5 +1,16 @@
--- [boundary.com] Nagios Plugin Adapter
--- [author] Ivano Picco <ivano.picco@pianobit.com>
+-- Copyright 2015 Boundary, Inc.
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--    http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS IS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-- See the License for the specific language governing permissions and
+-- limitations under the License.
 
 -- Common requires.
 local utils = require('utils')
@@ -85,7 +96,7 @@ function poll(item)
         local values = tools.split(parts[2],';')
         local value,uom = string.match(values[1],"([%d%.]+)([^%d]*)");
 
-        utils.print(string.upper(item.name.."_"..label..(#uom>0 and "_"..uom or "")), value or 0, item.source)
+        utils.print(string.upper("NAGIOS_CHECK_"..label..(#uom>0 and "_"..uom or "")), value or 0, item.source)
       end
     end
   )
@@ -97,7 +108,7 @@ if (#_parameters.items >0 ) then
   for _,item in ipairs(_parameters.items) do 
     item.source = item.source or _parameters.source --default hostname
     item.args = tools.split (item.args or "", " ")
-    timer.setInterval(_parameters.pollInterval,poll,item)
+    local timer = timer.setInterval(item.interval,poll,item)
   end
 else
   utils.debug("Configuration error: no items found")

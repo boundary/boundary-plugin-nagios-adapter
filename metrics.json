@@ -1,0 +1,74 @@
+{
+    "result": [
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the number of users on the system via check_users Nagios plugin",
+            "displayName": "Nagios - Users",
+            "displayNameShort": "Nagios - Users",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_USERS",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the system 1 minute load via check_load Nagios plugin",
+            "displayName": "Nagios - Load 1 Minute",
+            "displayNameShort": "Nagios - Load 1m",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_LOAD1",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the system 5 minute load via check_load Nagios plugin",
+            "displayName": "Nagios - Load 5 Minutes",
+            "displayNameShort": "Nagios - Load 5m",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_LOAD5",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "avg",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the system 15 minute load via check_load Nagios plugin",
+            "displayName": "Nagios - Load 15 Minutes",
+            "displayNameShort": "Nagios - Load 15m",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_LOAD15",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "ave",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the number of processes running on a host via check_procs Nagios plugin",
+            "displayName": "Nagios - Processes",
+            "displayNameShort": "Nagios - Procs",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_PROCS",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "ave",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the response time of a tcp connection to host via check_tcp Nagios plugin",
+            "displayName": "Nagios - TCP",
+            "displayNameShort": "Nagios - TCP",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_TCP",
+            "unit": "number"
+        },
+        {
+            "defaultAggregate": "ave",
+            "defaultResolutionMS": 20000,
+            "description": "Measures the length of the mail queue host via check_mail2 Nagios plugin",
+            "displayName": "Nagios - Mail Queue",
+            "displayNameShort": "Nagios - MailQ",
+            "isDisabled": 0,
+            "name": "NAGIOS_CHECK_MAILQ",
+            "unit": "number"
+        }
+    ]
+}
